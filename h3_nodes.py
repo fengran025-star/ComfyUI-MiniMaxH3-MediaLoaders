@@ -1024,7 +1024,7 @@ class MiniMaxH3PromptOptimizer:
             "required": {
                 "prompt": ("STRING", {"multiline": True, "default": ""}),
                 "mode": ([MODE_IMAGE, MODE_REFERENCE], {"default": MODE_IMAGE}),
-                "seconds": ("FLOAT", {"default": 5.0, "min": MIN_SECONDS, "max": MAX_SECONDS, "step": 0.1}),
+                "seconds": ("FLOAT", {"default": 5.0, "min": MIN_SECONDS, "max": MAX_SECONDS, "step": 1.0}),
                 "scene_guide": (choices, {"default": "none"}),
                 "api_format": (["openai", "responses", "gemini"], {"default": "openai"}),
                 "api_url": ("STRING", {"default": ""}),
@@ -1721,7 +1721,7 @@ class MiniMaxH3Easy:
                 "aspect_ratio": (list(ASPECT_RATIOS), {"default": ASPECT_WIDESCREEN}),
                 "width": ("INT", {"default": 1344, "min": 32, "max": nodes.MAX_RESOLUTION, "step": 32}),
                 "height": ("INT", {"default": 768, "min": 32, "max": nodes.MAX_RESOLUTION, "step": 32}),
-                "seconds": ("FLOAT", {"default": 5.0, "min": MIN_SECONDS, "max": MAX_SECONDS, "step": 0.1}),
+                "seconds": ("FLOAT", {"default": 5.0, "min": MIN_SECONDS, "max": MAX_SECONDS, "step": 1.0}),
                 "advanced": ("BOOLEAN", {"default": False}),
                 "fps": ("FLOAT", {"default": 24.0, "min": 1.0, "max": 120.0, "step": 1.0}),
                 "keyframe_role": ([KEYFRAME_FIRST, KEYFRAME_LAST], {"default": KEYFRAME_FIRST}),
