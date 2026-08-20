@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-minimaxh3-media-loaders"
+description = "A modified MiniMax H3 Easy distribution with unloadable image, video, and audio media loaders for ComfyUI."
+version = "1.0.0"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.urls]
+Upstream = "https://github.com/nkxx188/ComfyUI-MiniMaxH3-Easy"
+Documentation = "https://github.com/nkxx188/ComfyUI-MiniMaxH3-Easy#readme"
+
+[tool.comfy]
+DisplayName = "ComfyUI MiniMax H3 Media Loaders"
+Icon = ""

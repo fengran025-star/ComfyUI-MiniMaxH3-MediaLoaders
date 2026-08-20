@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.bak
+*.bak-*
+*.codex-backup*
+.DS_Store
+Thumbs.db
+input/
+output/
+temp/
+models/
